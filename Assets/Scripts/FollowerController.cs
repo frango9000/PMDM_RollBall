@@ -23,6 +23,6 @@ public class FollowerController : MonoBehaviour
     {
 	    // actualizamos la posicion de la capsula (enemy/agent)
 	    // con el player/target
-//	    agent.SetDestination(target.position);
+	    agent.SetDestination(target.position);
     }
 }

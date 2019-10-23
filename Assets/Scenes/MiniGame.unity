@@ -1603,7 +1603,7 @@ Transform:
   - {fileID: 1645509912}
   - {fileID: 404223226}
   m_Father: {fileID: 834384882}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &492310311
 GameObject:
@@ -2234,7 +2234,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 834384882}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &688462174
 MonoBehaviour:
@@ -2279,7 +2279,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 688462172}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -2605,7 +2605,7 @@ Prefab:
     - target: {fileID: 114284879614642160, guid: 2a51a25ef1a9e8243957ecbb15e50fdc,
         type: 2}
       propertyPath: targets.Array.size
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4408876553082648, guid: 2a51a25ef1a9e8243957ecbb15e50fdc, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2719,6 +2719,46 @@ Prefab:
       propertyPath: startPos
       value: 
       objectReference: {fileID: 621611864}
+    - target: {fileID: 114284879614642160, guid: 2a51a25ef1a9e8243957ecbb15e50fdc,
+        type: 2}
+      propertyPath: targets.Array.data[2]
+      value: 
+      objectReference: {fileID: 505229648}
+    - target: {fileID: 114284879614642160, guid: 2a51a25ef1a9e8243957ecbb15e50fdc,
+        type: 2}
+      propertyPath: targets.Array.data[3]
+      value: 
+      objectReference: {fileID: 146346966}
+    - target: {fileID: 114284879614642160, guid: 2a51a25ef1a9e8243957ecbb15e50fdc,
+        type: 2}
+      propertyPath: targets.Array.data[4]
+      value: 
+      objectReference: {fileID: 1070714836}
+    - target: {fileID: 114284879614642160, guid: 2a51a25ef1a9e8243957ecbb15e50fdc,
+        type: 2}
+      propertyPath: targets.Array.data[5]
+      value: 
+      objectReference: {fileID: 1453689760}
+    - target: {fileID: 114284879614642160, guid: 2a51a25ef1a9e8243957ecbb15e50fdc,
+        type: 2}
+      propertyPath: targets.Array.data[6]
+      value: 
+      objectReference: {fileID: 1813670970}
+    - target: {fileID: 114284879614642160, guid: 2a51a25ef1a9e8243957ecbb15e50fdc,
+        type: 2}
+      propertyPath: targets.Array.data[7]
+      value: 
+      objectReference: {fileID: 688462173}
+    - target: {fileID: 114284879614642160, guid: 2a51a25ef1a9e8243957ecbb15e50fdc,
+        type: 2}
+      propertyPath: targets.Array.data[8]
+      value: 
+      objectReference: {fileID: 881655307}
+    - target: {fileID: 114284879614642160, guid: 2a51a25ef1a9e8243957ecbb15e50fdc,
+        type: 2}
+      propertyPath: targets.Array.data[9]
+      value: 
+      objectReference: {fileID: 1566427451}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a51a25ef1a9e8243957ecbb15e50fdc, type: 2}
   m_IsPrefabAsset: 0
@@ -3184,11 +3224,11 @@ Transform:
   - {fileID: 1070714836}
   - {fileID: 1453689760}
   - {fileID: 1813670970}
+  - {fileID: 688462173}
+  - {fileID: 881655307}
   - {fileID: 1136676007}
   - {fileID: 1229626950}
   - {fileID: 490316202}
-  - {fileID: 688462173}
-  - {fileID: 881655307}
   - {fileID: 2103123659}
   - {fileID: 1192755991}
   m_Father: {fileID: 0}
@@ -3370,7 +3410,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 834384882}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &881655308
 MonoBehaviour:
@@ -3415,7 +3455,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 881655306}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -3901,7 +3941,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -10}
+  m_AnchoredPosition: {x: 0, y: -100}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1042915062
@@ -3916,7 +3956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.6981132, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3925,18 +3965,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 27
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 42
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &1042915063
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4324,7 +4364,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1070714835}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -4549,7 +4589,7 @@ Transform:
   - {fileID: 1252330832}
   - {fileID: 1174323069}
   m_Father: {fileID: 834384882}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1174323068
 GameObject:
@@ -5023,7 +5063,7 @@ Transform:
   - {fileID: 1846344714}
   - {fileID: 337870563}
   m_Father: {fileID: 834384882}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1247924603
 GameObject:
@@ -5692,7 +5732,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1453689759}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -6249,7 +6289,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1566427446}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -6566,6 +6606,14 @@ MonoBehaviour:
   targets:
   - {fileID: 1201010476}
   - {fileID: 1710089406}
+  - {fileID: 505229648}
+  - {fileID: 146346966}
+  - {fileID: 1070714836}
+  - {fileID: 1453689760}
+  - {fileID: 1813670970}
+  - {fileID: 688462173}
+  - {fileID: 881655307}
+  - {fileID: 1566427451}
   enemyProximity: 10
   bridge01: {fileID: 226945344}
   bridge12: {fileID: 407434379}
@@ -7576,7 +7624,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1813670969}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2

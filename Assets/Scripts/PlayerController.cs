@@ -86,11 +86,11 @@ public class PlayerController : MonoBehaviour {
                 case "0":
                     scoreLVL0 += 1;
                     Debug.Log(scoreLVL0);
-                    if (scoreLVL0 == 3)
+                    if (scoreLVL0 == 1)
                     {
                         bridge01.GetComponent<Animator>().SetBool("isClosed", false);
                     }
-                    else if (scoreLVL0 == 5)
+                    else if (scoreLVL0 == 3)
                     {
                         heart1.GetComponent<Animator>().SetBool("isGranted", true);
                     }
@@ -98,11 +98,11 @@ public class PlayerController : MonoBehaviour {
                 case "1":
                     scoreLVL1 += 1;
                     Debug.Log(scoreLVL1);
-                    if (scoreLVL1 == 3)
+                    if (scoreLVL1 == 1)
                     {
                         bridge12.GetComponent<Animator>().SetBool("isClosed", false);
                     }
-                    else if (scoreLVL1 == 5)
+                    else if (scoreLVL1 == 3)
                     {
                         heart2.GetComponent<Animator>().SetBool("isGranted", true);
                     }
@@ -110,11 +110,11 @@ public class PlayerController : MonoBehaviour {
                 case "2":
                     scoreLVL2 += 1;
                     Debug.Log(scoreLVL2);
-                    if (scoreLVL2 == 3)
+                    if (scoreLVL2 == 1)
                     {
                         bridge23.GetComponent<Animator>().SetBool("isClosed", false);
                     }
-                    else if (scoreLVL2 == 5)
+                    else if (scoreLVL2 == 3)
                     {
                         heart3.GetComponent<Animator>().SetBool("isGranted", true);
                     }
@@ -142,6 +142,7 @@ public class PlayerController : MonoBehaviour {
             rb.velocity = Vector3.zero;
             hearts -= 1;
             animator.SetBool("isDead", true);
+            rb.constraints = RigidbodyConstraints.FreezeAll;
             
 
             Debug.Log("Hearts = " + hearts);
@@ -152,13 +153,26 @@ public class PlayerController : MonoBehaviour {
 
     private void resurrect()
     {
-        animator.SetBool("isResurrecting", true);
+        if (hearts > -1)
+        {
+            animator.SetBool("isResurrecting", true);
+            transform.position = startPos.position;
+        }
+        else winText.text = "Game Over";
+        
+        rb.constraints = RigidbodyConstraints.FreezeAll;
+
+
     }
 
     private void reset()
     {
-        transform.position = startPos.position;
-        animator.SetBool("isDead", false);
+        if (hearts > -1)
+        {
+            rb.constraints = RigidbodyConstraints.None;
+            animator.SetBool("isDead", false);
+
+        }
     }
 
     private void updateHeartsUI()
