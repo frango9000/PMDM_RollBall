@@ -15,6 +15,7 @@ TagManager:
   - CoinL2
   - CoinL3
   - Heart
+  - LevelCoin
   layers:
   - Default
   - TransparentFX

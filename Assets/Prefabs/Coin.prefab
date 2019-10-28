@@ -28,7 +28,7 @@ GameObject:
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &4382203863357398
 Transform:
@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  rotateAxis: z
 --- !u!136 &136927792911276728
 CapsuleCollider:
   m_ObjectHideFlags: 1
