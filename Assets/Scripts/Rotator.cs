@@ -2,9 +2,15 @@
 
 public class Rotator : MonoBehaviour
 {
+    
+    //controlador de rotaciones
+    
+    //eje publico para editar el eje de rotacion desde unity
     public string rotateAxis = "z";
     public int speed = 10;
 
+    
+    //multiplicamos por delta time para regularizar las rotaciones por segundo, indiferentemente de el framerate
     private void Update()
     {
         switch (rotateAxis.ToLower())

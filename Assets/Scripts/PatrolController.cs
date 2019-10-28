@@ -3,12 +3,16 @@ using UnityEngine.AI;
 
 public class PatrolController : MonoBehaviour
 {
+    
+    //controlador de agente que patrulla
+    
+    
     protected NavMeshAgent agent;
     private int destPoint;
 
+    
+    //lista de puntos que el agente va a seguir -> waypoints
     public Transform[] points;
-
-    public Transform target;
 
 
     // Use this for initialization
@@ -22,15 +26,14 @@ public class PatrolController : MonoBehaviour
 
     private void GotoNextPoint()
     {
-        // Returns if no points have been set up
+        // retorna si no hay waypoints
         if (points.Length == 0)
             return;
 
-        // Set the agent to go to the currently selected destination.
+        // establecer la nueva direccion del agente
         agent.destination = points[destPoint].position;
 
-        // Choose the next point in the array as the destination,
-        // cycling to the start if necessary.
+        //  establecer el siguiente waypoint
         destPoint = (destPoint + 1) % points.Length;
     }
 

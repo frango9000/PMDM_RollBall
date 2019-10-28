@@ -3,6 +3,10 @@ using UnityEngine.AI;
 
 public class FollowerController : MonoBehaviour
 {
+    
+    //controlador de agente que persigue
+    
+    
     protected NavMeshAgent agent;
 
     public Transform target;
@@ -10,6 +14,7 @@ public class FollowerController : MonoBehaviour
     // Use this for initialization
     protected void Start()
     {
+        //obtenemos el NavMeshAgent al inicar para ser utilizado en cada frame
         agent = GetComponent<NavMeshAgent>();
         agent.autoBraking = false;
     }

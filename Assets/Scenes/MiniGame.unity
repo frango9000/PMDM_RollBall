@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45082235, g: 0.50074106, b: 0.57469386, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.38073993, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4157,6 +4157,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 95598605727895362, guid: cea4986ba8d3049e39f86ce0d0d84d30,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cea4986ba8d3049e39f86ce0d0d84d30, type: 2}
   m_IsPrefabAsset: 0
@@ -7140,9 +7145,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11a6d152859b249d8950f507fcd472aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  bridge01: {fileID: 226945344}
+  bridge12: {fileID: 407434379}
+  bridge23: {fileID: 169178535}
+  bridge34: {fileID: 538272232}
   countText: {fileID: 52668666}
-  winText: {fileID: 1042915062}
+  enemyProximity: 10
+  heart1: {fileID: 984865641}
+  heart2: {fileID: 2129859418}
+  heart3: {fileID: 1519251361}
+  heartUi: {fileID: 2053484863}
+  lightL1: {fileID: 531757480}
+  lightL2: {fileID: 950876769}
+  lightL3: {fileID: 358596121}
+  lightL4: {fileID: 1889711722}
+  speed: 10
   startPos: {fileID: 621611864}
   targets:
   - {fileID: 1201010476}
@@ -7155,19 +7172,7 @@ MonoBehaviour:
   - {fileID: 688462173}
   - {fileID: 881655307}
   - {fileID: 1566427451}
-  enemyProximity: 10
-  bridge01: {fileID: 226945344}
-  bridge12: {fileID: 407434379}
-  bridge23: {fileID: 169178535}
-  bridge34: {fileID: 538272232}
-  heart1: {fileID: 984865641}
-  heart2: {fileID: 2129859418}
-  heart3: {fileID: 1519251361}
-  lightL1: {fileID: 531757480}
-  lightL2: {fileID: 950876769}
-  lightL3: {fileID: 358596121}
-  lightL4: {fileID: 1889711722}
-  heartUi: {fileID: 2053484863}
+  winText: {fileID: 1042915062}
 --- !u!95 &1596920425
 Animator:
   serializedVersion: 3
